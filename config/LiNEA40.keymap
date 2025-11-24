@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,
+            //スクロール方向を逆転,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -157,10 +157,10 @@
 
         Arrow {
             bindings = <
-&kp ESCAPE                  &kp F4           &kp LS(N2)       &kp DOLLAR     &kp PERCENT                      &kp CARET     &kp LC(PAGE_UP)     &kp UP_ARROW           &kp LC(PAGE_DOWN)     &kp LS(LG(S))
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON  &kp SEMICOLON                    &kp C_MUTE    &kp LEFT_ARROW      &kp DOWN_ARROW         &kp RIGHT             &kp LC(AT)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS       &kp SQT                          &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LS(RIGHT_BRACKET)  &kp LC(RIGHT_ARROW)   &kp LS(INT1)
-&trans                      &trans           &trans           &trans         &trans         &trans    &trans  &trans                            &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
+&kp ESCAPE                  &kp F4           &kp LS(N2)       &kp LS(NUMBER_6)  &kp PERCENT                      &kp CARET     &kp LC(PAGE_UP)     &kp UP_ARROW           &kp LC(PAGE_DOWN)     &kp LS(LG(S))
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON     &kp SEMICOLON                    &kp C_MUTE    &kp LEFT_ARROW      &kp DOWN_ARROW         &kp RIGHT             &kp LC(AT)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS          &kp SQT                          &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LS(RIGHT_BRACKET)  &kp LC(RIGHT_ARROW)   &kp LS(INT1)
+&trans                      &trans           &trans           &trans            &trans         &trans    &trans  &trans                            &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -170,10 +170,10 @@
 
         NUMBER {
             bindings = <
-&trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                    &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
-&trans    &kp LEFT_ARROW          &kp DOWN      &kp RIGHT_ARROW          &trans                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp HOME  &kp PAGE_DOWN           &kp END       &kp PAGE_UP              &trans                    &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans    &trans                  &trans        &trans                   &trans  &trans    &trans  &trans                         &kp DOT       &kp ENTER     &kp QUESTION
+&kp ESCAPE    &kp F4          &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp PRCNT                           &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
+&kp KP_EQUAL  &kp LEFT_ARROW  &kp DOWN          &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&kp HOME      &kp PAGE_DOWN   &kp END           &kp PAGE_UP       &trans                              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&trans        &trans          &trans            &trans            &trans            &trans    &trans  &trans                         &kp KP_COMMA  &kp DOT       &kp QUESTION
             >;
         };
 
