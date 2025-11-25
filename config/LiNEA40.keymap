@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -144,10 +144,10 @@
 
         Arrow {
             bindings = <
-&kp ESCAPE                  &kp F4           &kp LS(N2)       &kp LS(NUMBER_6)  &kp PERCENT                      &kp CARET     &kp LC(PAGE_UP)     &kp UP_ARROW           &kp LC(PAGE_DOWN)     &kp LS(LG(S))
-&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON     &kp SEMICOLON                    &kp C_MUTE    &kp LEFT_ARROW      &kp DOWN_ARROW         &kp RIGHT             &kp LC(AT)
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS          &kp SQT                          &kp KP_EQUAL  &kp LC(LEFT_ARROW)  &kp LS(RIGHT_BRACKET)  &kp LC(RIGHT_ARROW)   &kp LS(INT1)
-&trans                      &trans           &trans           &trans            &trans         &trans    &trans  &trans                            &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp LS(QUESTION)
+&kp ESCAPE                  &kp F4           &kp LS(N2)       &kp LS(NUMBER_6)  &kp PERCENT                      &kp CARET     &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)  &trans
+&kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp SEMICOLON     &kp SEMICOLON                    &trans        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT          &trans
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS          &kp SQT                          &kp KP_EQUAL  &trans           &trans          &trans             &kp LS(INT1)
+&trans                      &trans           &trans           &trans            &trans         &trans    &trans  &trans                         &trans          &trans             &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
