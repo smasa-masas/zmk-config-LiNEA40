@@ -6,10 +6,10 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-#define MOUSE 1
+#define CURSOR 1
 #define MARK 2
-#define CURSOR 3
-#define FUNCTION 4
+#define FUNCTION 3
+#define MOUSE 4
 #define SCROLL 5
 #define WIRELESS 6
 
@@ -128,7 +128,7 @@
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
-        //1
+        //4
         MOUSE {
             bindings = <
                 &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans  &trans  &trans
@@ -149,7 +149,7 @@
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
-        //3
+        //1
         CURSOR {
             bindings = <
                 &trans    &kp LC(LG(LEFT_ARROW))  &kp UP_ARROW  &kp LC(LG(RIGHT_ARROW))  &trans                       &kp KP_MULTIPLY  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_PLUS
@@ -159,7 +159,7 @@
             >;
         };
 
-        //4
+        //3
         FUNCTION {
             bindings = <
                 &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &trans      &trans  &kp LA(PRINTSCREEN)  &trans  &kp LC(LA(DELETE))
