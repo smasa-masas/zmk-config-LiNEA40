@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -136,7 +136,7 @@
 &kp Q             &kp W         &kp E               &kp R             &kp T                                             &kp Y        &kp U  &lt 5 I          &kp O            &lt 2 P
 &kp A             &kp S         &kp D               &kp F             &kp G                                             &kp H        &kp J  &kp K            &kp L            &lt 5 MINUS
 &mt LEFT_SHIFT Z  &kp X         &kp C               &kp V             &kp B                                             &kp N        &kp M  &kp COMMA        &kp DOT          &mt RIGHT_SHIFT LS(INTERNATIONAL_1)
-&mt LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt 3 LANGUAGE_1  &lt 1 SPACE  &lt 2 LANGUAGE_2    &lt 1 BACKSPACE  &lt 4 ENTER         &lt 6 SEMICOLON  &kp RIGHT_SHIFT  &mt DELETE SLASH
+&mt LCTRL ESC     &kp LEFT_WIN  &mt LEFT_ALT GRAVE  &lt 3 LANGUAGE_1  &lt 1 SPACE  &lt 2 LANGUAGE_2    &lt 1 BACKSPACE  &lt 1 ENTER         &lt 6 SEMICOLON  &kp RIGHT_SHIFT  &mt DELETE SLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -146,7 +146,7 @@
             bindings = <
 &kp ESCAPE                  &kp F4           &kp LS(N2)       &kp LS(NUMBER_6)  &kp PERCENT                     &kp CARET     &kp LC(PAGE_UP)  &kp UP_ARROW    &kp LC(PAGE_DOWN)  &trans
 &kp SLASH                   &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp LS(NUMBER_1)  &kp QUESTION                    &trans        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT          &trans
-&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp APOS          &kp SQT                         &kp KP_EQUAL  &trans           &trans          &trans             &kp LS(INT1)
+&mt LEFT_SHIFT KP_NUMBER_0  &kp KP_NUMBER_1  &kp SEMI         &kp APOS          &kp SQT                         &kp KP_EQUAL  &trans           &trans          &trans             &kp LS(INT1)
 &trans                      &trans           &trans           &trans            &trans        &trans    &trans  &trans                         &trans          &trans             &trans
             >;
 
@@ -164,10 +164,10 @@
 
         NUMBER {
             bindings = <
-&kp ESCAPE     &kp F4          &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp PRCNT                           &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
-&kp LS(MINUS)  &kp LEFT_ARROW  &kp DOWN          &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
-&kp HOME       &kp PAGE_DOWN   &kp END           &kp PAGE_UP       &trans                              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
-&trans         &trans          &trans            &trans            &trans            &trans    &trans  &trans                         &kp KP_COMMA  &kp DOT       &kp QUESTION
+&kp F4            &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp LS(N8)        &kp LS(N9)                          &kp KP_PLUS      &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp KP_MINUS
+&kp LS(NUMBER_4)  &kp LS(N5)        &kp DOWN          &kp LS(NUMBER_8)  &kp LS(NUMBER_9)                    &kp KP_MULTIPLY  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp KP_SLASH
+&trans            &kp PAGE_DOWN     &kp END           &kp PAGE_UP       &trans                              &kp NUMBER_0     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp ENTER
+&trans            &trans            &trans            &trans            &trans            &trans    &trans  &trans                         &kp KP_COMMA  &kp DOT       &kp QUESTION
             >;
         };
 
