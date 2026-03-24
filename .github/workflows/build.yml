@@ -1,8 +1,12 @@
 on: [push, pull_request, workflow_dispatch]
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   build:
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.2.1
+    with:
+      build_matrix_path: "build.yaml"
+      config_path: "config"
+    secrets:
+      # Node.js 24 を強制する設定をここに書き足します
+      env_vars: |
+        FORCE_JAVASCRIPT_ACTIONS_TO_NODE24=true
