@@ -28,7 +28,7 @@
 
 &msc {
     delay-ms = <3>;
-    trigger-period-ms = <3>;
+    trigger-period-ms = <6>;
     time-to-max-speed-ms = <100>;
     acceleration-exponent = <0>;
 };
